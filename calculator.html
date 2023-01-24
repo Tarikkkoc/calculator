@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              .content-auto {
+                content-visibility: auto;
+              }
+            }
+          </style>
+    
+
+<style>
+    .numara{
+        width: 100%;
+        background-color: grey;
+        height: 25px;
+    }
+    .islem{
+        width: 100%;
+        background-color: gray;
+        height: 25px;
+    }
+    /* .form{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    } */
+</style>
+</head>
+<body class="bg-green-500">
+<form class="w-full flex flex-col items-center justify-evenly" name="hesapmakinesi">
+    <div style="text-align: center; width: 15%;" class="font-mono text-xl "><strong>CALCULATOR</strong></div> <br>
+    <table>
+        <tr>
+            <th colspan="4"><input class="rounded-xl bg-green-300" type="text" name="ekran"></th>
+        </tr>
+        <tr>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '1'"><strong>1</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '2'"><strong>2</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '3'"><strong>3</strong></button></td>
+            <td><button class="w-full h-6 bg-green-800 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '/'"><strong>/</strong></button></td>
+        </tr>
+        <tr>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '4'"><strong>4</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '5'"><strong>5</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '6'"><strong>6</strong></button></td>
+            <td><button class="w-full h-6 bg-green-800 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '*'"><strong>*</strong></button></td>
+        </tr>
+        <tr>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '7'"><strong>7</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '8'"><strong>8</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '9'"><strong>9</strong></button></td>
+            <td><button class="w-full h-6 bg-green-800 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '+'"><strong>+</strong></button></td>
+        </tr>
+        <tr>
+            <td><button class="w-full h-6 bg-green-800 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value = ''"><strong>C</strong></button></td>
+            <td><button class="w-full h-6 bg-green-700 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '0'"><strong>0</strong></button></td>
+            <td><button class="w-full h-6 bg-green-800 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value = eval(document.hesapmakinesi.ekran.value)"><strong>=</strong></button></td>
+            <td><button class="w-full h-6 bg-green-800 rounded-lg" type="button" onclick="document.hesapmakinesi.ekran.value += '-'"><strong>-</strong></button></td>
+        </tr>
+    </table>
+</form>
+<div class="w-full h-12 fixed left-0 bottom-0 bg-green-700 flex align-center justify-around" >
+    <div class="flex items-center justify-around">
+        <a href="https://github.com/Tarikkkoc">
+            <img src="https://icon-library.com/images/github-icon-png/github-icon-png-5.jpg" alt="github" width="30" height="30">
+        </a>
+        <a href="https://www.linkedin.com/in/ahmet-tarık-koç-3b952a193/">
+            <img src="https://icon-library.com/images/linkedin-icon-png-black/linkedin-icon-png-black-12.jpg" alt="linkedin" width="30" height="30">
+        </a>
+        <a href="mailto:ahmettarikkoc@gmail.com">
+            <img src="https://icon-library.com/images/mail-icon-black-and-white/mail-icon-black-and-white-0.jpg" alt="e-mail" width="27" height="30">
+        </a>
+        <a href="https://www.instagram.com/ahmet_tarik/">
+            <img src="https://icon-library.com/images/instagram-icon-logo/instagram-icon-logo-29.jpg" alt="instagram" width="35" height="30">
+        </a>
+        
+    </div>
+</div>
+<script>
+/**/
+
+</script>
+</body>
+</html>
